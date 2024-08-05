@@ -19,6 +19,7 @@ export default function Home() {
           className="hidden lg:flex w-full h-full object-cover"
         />
       </div>
+     
       <div className="relative w-full transform scale-x-[-1]">
         <img 
           src="/about/blob-scene-haikei-mbl.svg" 
@@ -31,7 +32,14 @@ export default function Home() {
           className="hidden lg:flex w-full h-full object-cover"
         />
       </div>
+       <div className="relative w-full">
+        <img 
+          src="/about/blob-scene-haikei-mbl.svg" 
+          alt="bg" 
+          className="flex lg:hidden w-full h-full object-cover"
+        />
       </div>
+    </div>
 
         <div className="mt-16">
           <div className="mt-5">

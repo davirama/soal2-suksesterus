@@ -25,11 +25,11 @@ export default function Header() {
   }, []);
   return (
     <header >
-      <div className={`fixed top-0 z-10 w-full bg-transparent p-3 pb-0 lg:p-5 transition-shadow ${hasShadow ?  'shadow-md bg-white' : ''} ${isMenuOpen ? 'shadow-none' : 'shadow-none'} `}>
+      <div className={`fixed top-0 z-10 w-full bg-transparent p-3 pb-0 lg:p-5 transition-shadow ${hasShadow ?  'shadow-xl bg-white' : 'shadow-none'}`}>
         <div className="grid grid-cols-2 gap-1 lg:gap-4 items-center">
           <div className="flex gap-2 items-center">
             <div className="flex flex-col">
-              <p className={`font-semibold text-white flex text-base lg:text-xl ${hasShadow ?  'text-black' : ''} `}>Home ERP</p>
+              <p className={`font-semibold  flex text-base lg:text-xl ${hasShadow ?  'text-black' : 'text-white'}`}>Home ERP</p>
             </div>
           </div>
           <div className="flex justify-end items-center">
@@ -63,8 +63,8 @@ export default function Header() {
       </div>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className={`fixed top-12 bg-white z-10 w-full p-3`}>
-        <div className="lg:hidden flex flex-col text-end border ml-32">
+        <div className={`fixed top-12 z-10 w-full p-3`}>
+        <div className="lg:hidden flex flex-col bg-white text-end border ml-32">
           <a className="block border font-semibold text-blue-500  p-2" href="#about">About</a>
           <a className="block border font-semibold text-black  p-2" href="#pricing">Pricing</a>
           <a className="block border font-semibold text-black p-2" href="#contact">Contact</a>
